@@ -1,0 +1,23 @@
+<p>Loading, please wait...</p>
+<script>
+let n = Math.floor(Math.random() * 1000);
+console.log("random = %d", n);
+
+var res = 0;
+res = prompt("Введите число:",0);
+let result = Number(res);
+if (isNaN(res)==false) {
+	console.log("Введенное число: %d", result);
+	if (n > result) 
+		alert("Больше");
+	else
+		if (n < result)
+			alert("меньше");
+		else
+			alert("равно");
+}
+else
+	alert("введено не число");
+	
+
+</script>
